@@ -8,6 +8,7 @@ import argparse
 import sys
 
 import gunicorn.app.base
+from flask_babel import Babel,gettext as _
 
 
 class GunicornSupersetApplication(gunicorn.app.base.BaseApplication):
@@ -59,7 +60,7 @@ def run_server():
 
     if args.debug:
         from superset import app
-
+        babel = Babel(app)
         app.run(
             host='0.0.0.0',
             port=int(args.port),
