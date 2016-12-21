@@ -1,0 +1,2059 @@
+# Translations template for PROJECT.
+# Copyright (C) 2016 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2016-12-21 16:31+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: db_engine_specs.py:79 db_engine_specs.py:102 db_engine_specs.py:125
+#: db_engine_specs.py:160 db_engine_specs.py:268 db_engine_specs.py:304
+#: forms.py:436
+msgid "Time Column"
+msgstr ""
+
+#: db_engine_specs.py:80 db_engine_specs.py:126 db_engine_specs.py:161
+#: db_engine_specs.py:269
+msgid "second"
+msgstr ""
+
+#: db_engine_specs.py:81 db_engine_specs.py:129 db_engine_specs.py:163
+#: db_engine_specs.py:271 db_engine_specs.py:305
+msgid "minute"
+msgstr ""
+
+#: db_engine_specs.py:82 db_engine_specs.py:131 db_engine_specs.py:165
+#: db_engine_specs.py:277 db_engine_specs.py:307 forms.py:380 forms.py:394
+msgid "hour"
+msgstr ""
+
+#: db_engine_specs.py:83 db_engine_specs.py:103 db_engine_specs.py:133
+#: db_engine_specs.py:167 db_engine_specs.py:279 db_engine_specs.py:309
+#: forms.py:381 forms.py:395
+msgid "day"
+msgstr ""
+
+#: db_engine_specs.py:84 db_engine_specs.py:104 db_engine_specs.py:134
+#: db_engine_specs.py:169 db_engine_specs.py:281 db_engine_specs.py:311
+#: forms.py:366 forms.py:382 forms.py:396
+msgid "week"
+msgstr ""
+
+#: db_engine_specs.py:85 db_engine_specs.py:106 db_engine_specs.py:136
+#: db_engine_specs.py:171 db_engine_specs.py:283 db_engine_specs.py:313
+#: forms.py:369 forms.py:383 forms.py:397
+msgid "month"
+msgstr ""
+
+#: db_engine_specs.py:86 db_engine_specs.py:138 db_engine_specs.py:173
+#: db_engine_specs.py:285 db_engine_specs.py:315
+msgid "quarter"
+msgstr ""
+
+#: db_engine_specs.py:87 db_engine_specs.py:140 db_engine_specs.py:287
+#: db_engine_specs.py:317 forms.py:384
+msgid "year"
+msgstr ""
+
+#: db_engine_specs.py:175 forms.py:368
+msgid "week_ending_saturday"
+msgstr ""
+
+#: db_engine_specs.py:178
+msgid "week_start_sunday"
+msgstr ""
+
+#: db_engine_specs.py:273
+msgid "5 minute"
+msgstr ""
+
+#: db_engine_specs.py:275
+msgid "half hour"
+msgstr ""
+
+#: forms.py:30
+msgid "D3 format syntax https://github.com/d3/d3-format"
+msgstr ""
+
+#: forms.py:143
+msgid "Viz"
+msgstr ""
+
+#: forms.py:146
+msgid "The type of visualization to display"
+msgstr ""
+
+#: forms.py:149
+msgid "Metrics"
+msgstr ""
+
+#: forms.py:152 forms.py:157
+msgid "One or many metrics to display"
+msgstr ""
+
+#: forms.py:155
+msgid "Ordering"
+msgstr ""
+
+#: forms.py:160 views.py:460 views.py:500
+msgid "Metric"
+msgstr ""
+
+#: forms.py:163
+msgid "Choose the metric"
+msgstr ""
+
+#: forms.py:166
+msgid "Chart Style"
+msgstr ""
+
+#: forms.py:168
+msgid "stack"
+msgstr ""
+
+#: forms.py:169
+msgid "stream"
+msgstr ""
+
+#: forms.py:170
+msgid "expand"
+msgstr ""
+
+#: forms.py:176
+msgid "Color Scheme"
+msgstr ""
+
+#: forms.py:178
+msgid "fire"
+msgstr ""
+
+#: forms.py:179
+msgid "blue_white_yellow"
+msgstr ""
+
+#: forms.py:180
+msgid "white_black"
+msgstr ""
+
+#: forms.py:181
+msgid "black_white"
+msgstr ""
+
+#: forms.py:187
+msgid "Normalize Across"
+msgstr ""
+
+#: forms.py:189
+msgid "heatmap"
+msgstr ""
+
+#: forms.py:190
+msgid "x"
+msgstr ""
+
+#: forms.py:191
+msgid "y"
+msgstr ""
+
+#: forms.py:194
+msgid ""
+"Color will be rendered based on a ratio of the cell against the sum of "
+"across this criteria"
+msgstr ""
+
+#: forms.py:200
+msgid "Color Scale"
+msgstr ""
+
+#: forms.py:202
+msgid "series"
+msgstr ""
+
+#: forms.py:203
+msgid "overall"
+msgstr ""
+
+#: forms.py:204
+msgid "change"
+msgstr ""
+
+#: forms.py:207
+msgid "Defines how the color are attributed."
+msgstr ""
+
+#: forms.py:210
+msgid "Rendering"
+msgstr ""
+
+#: forms.py:212
+msgid "pixelated (Sharp)"
+msgstr ""
+
+#: forms.py:213
+msgid "auto (Smooth)"
+msgstr ""
+
+#: forms.py:216
+msgid ""
+"image-rendering CSS attribute of the canvas object that defines how the "
+"browser scales up the image"
+msgstr ""
+
+#: forms.py:221
+msgid "XScale Interval"
+msgstr ""
+
+#: forms.py:224
+msgid "Number of step to take between ticks when printing the x scale"
+msgstr ""
+
+#: forms.py:229
+msgid "YScale Interval"
+msgstr ""
+
+#: forms.py:232
+msgid "Number of step to take between ticks when printing the y scale"
+msgstr ""
+
+#: forms.py:237
+msgid "Stacked Bars"
+msgstr ""
+
+#: forms.py:242
+msgid "Show Markers"
+msgstr ""
+
+#: forms.py:249
+msgid "Bar Values"
+msgstr ""
+
+#: forms.py:254
+msgid "Sort Bars"
+msgstr ""
+
+#: forms.py:256
+msgid "Sort bars by x labels."
+msgstr ""
+
+#: forms.py:259
+msgid "Extra Controls"
+msgstr ""
+
+#: forms.py:261
+msgid ""
+"Whether to show extra controls or not. Extra controls include things like"
+" making mulitBar charts stacked or side by side."
+msgstr ""
+
+#: forms.py:267
+msgid "Reduce X ticks"
+msgstr ""
+
+#: forms.py:269
+msgid ""
+"Reduces the number of X axis ticks to be rendered. If true, the x axis "
+"wont overflow and labels may be missing. If false, a minimum width will "
+"be applied to columns and the width may overflow into an horizontal "
+"scroll."
+msgstr ""
+
+#: forms.py:277
+msgid "Include Series"
+msgstr ""
+
+#: forms.py:279
+msgid "Include series name as an axis"
+msgstr ""
+
+#: forms.py:282
+msgid "Color Metric"
+msgstr ""
+
+#: forms.py:285
+msgid "A metric to use for color"
+msgstr ""
+
+#: forms.py:288
+msgid "Country Field Type"
+msgstr ""
+
+#: forms.py:291
+msgid "Full name"
+msgstr ""
+
+#: forms.py:292
+msgid "code International Olympic Committee (cioc)"
+msgstr ""
+
+#: forms.py:293
+msgid "code ISO 3166-1 alpha-2 (cca2)"
+msgstr ""
+
+#: forms.py:294
+msgid "code ISO 3166-1 alpha-3 (cca3)"
+msgstr ""
+
+#: forms.py:296
+msgid ""
+"The country code standard that Superset should expect to find in the "
+"[country] column"
+msgstr ""
+
+#: forms.py:301
+msgid "Group by"
+msgstr ""
+
+#: forms.py:303
+msgid "One or many fields to group by"
+msgstr ""
+
+#: forms.py:306 forms.py:311
+msgid "Columns"
+msgstr ""
+
+#: forms.py:308
+msgid "One or many fields to pivot as columns"
+msgstr ""
+
+#: forms.py:313 forms.py:319 forms.py:325
+msgid "Columns to display"
+msgstr ""
+
+#: forms.py:316
+msgid "X"
+msgstr ""
+
+#: forms.py:322
+msgid "Y"
+msgstr ""
+
+#: forms.py:328
+msgid "Origin"
+msgstr ""
+
+#: forms.py:330
+msgid "default"
+msgstr ""
+
+#: forms.py:331 forms.py:500
+msgid "now"
+msgstr ""
+
+#: forms.py:334
+msgid ""
+"Defines the origin where time buckets start, accepts natural dates as in "
+"'now', 'sunday' or '1970-01-01'"
+msgstr ""
+
+#: forms.py:339
+msgid "Bottom Margin"
+msgstr ""
+
+#: forms.py:342
+msgid "Bottom marging, in pixels, allowing for more room for axis labels"
+msgstr ""
+
+#: forms.py:347
+msgid "Page Length"
+msgstr ""
+
+#: forms.py:350
+msgid "Number of rows per page, 0 means no pagination"
+msgstr ""
+
+#: forms.py:354
+msgid "Time Granularity"
+msgstr ""
+
+#: forms.py:357
+msgid "all"
+msgstr ""
+
+#: forms.py:358
+msgid "5 seconds"
+msgstr ""
+
+#: forms.py:359
+msgid "30 seconds"
+msgstr ""
+
+#: forms.py:360
+msgid "1 minute"
+msgstr ""
+
+#: forms.py:361
+msgid "5 minutes"
+msgstr ""
+
+#: forms.py:362
+msgid "1 hour"
+msgstr ""
+
+#: forms.py:363
+msgid "6 hour"
+msgstr ""
+
+#: forms.py:364
+msgid "1 day"
+msgstr ""
+
+#: forms.py:365
+msgid "7 days"
+msgstr ""
+
+#: forms.py:367
+msgid "week_starting_sunday"
+msgstr ""
+
+#: forms.py:371
+msgid ""
+"The time granularity for the visualization. Note that you can type and "
+"use simple natural language as in '10 seconds', '1 day' or '56 weeks'"
+msgstr ""
+
+#: forms.py:377
+msgid "Domain"
+msgstr ""
+
+#: forms.py:386
+msgid "The time unit used for the grouping of blocks"
+msgstr ""
+
+#: forms.py:390
+msgid "Subdomain"
+msgstr ""
+
+#: forms.py:393 forms.py:744
+msgid "min"
+msgstr ""
+
+#: forms.py:399
+msgid ""
+"The time unit for each block. Should be a smaller unit than "
+"domain_granularity. Should be larger or equal to Time Grain"
+msgstr ""
+
+#: forms.py:404
+msgid "Link Length"
+msgstr ""
+
+#: forms.py:416
+msgid "Link length in the force layout"
+msgstr ""
+
+#: forms.py:419
+msgid "Charge"
+msgstr ""
+
+#: forms.py:433
+msgid "Charge in the force layout"
+msgstr ""
+
+#: forms.py:439
+msgid ""
+"The time column for the visualization. Note that you can define arbitrary"
+" expression that return a DATETIME column in the table editor. Also note "
+"that the filter below is applied against this column or expression"
+msgstr ""
+
+#: forms.py:447
+msgid "Resample Rule"
+msgstr ""
+
+#: forms.py:450
+msgid "1T"
+msgstr ""
+
+#: forms.py:451
+msgid "1H"
+msgstr ""
+
+#: forms.py:452
+msgid "1D"
+msgstr ""
+
+#: forms.py:453
+msgid "7D"
+msgstr ""
+
+#: forms.py:454
+msgid "1M"
+msgstr ""
+
+#: forms.py:455
+msgid "1AS"
+msgstr ""
+
+#: forms.py:457
+msgid "Pandas resample rule"
+msgstr ""
+
+#: forms.py:460
+msgid "Resample How"
+msgstr ""
+
+#: forms.py:464 forms.py:743
+msgid "mean"
+msgstr ""
+
+#: forms.py:465 forms.py:742
+msgid "sum"
+msgstr ""
+
+#: forms.py:466 forms.py:746
+msgid "median"
+msgstr ""
+
+#: forms.py:468
+msgid "Pandas resample how"
+msgstr ""
+
+#: forms.py:471
+msgid "Resample Fill Method"
+msgstr ""
+
+#: forms.py:475
+msgid "ffill"
+msgstr ""
+
+#: forms.py:476
+msgid "bfill"
+msgstr ""
+
+#: forms.py:478
+msgid "Pandas resample fill method"
+msgstr ""
+
+#: forms.py:481
+msgid "Since"
+msgstr ""
+
+#: forms.py:484
+msgid "1 hour ago"
+msgstr ""
+
+#: forms.py:485
+msgid "12 hours ago"
+msgstr ""
+
+#: forms.py:486 forms.py:501
+msgid "1 day ago"
+msgstr ""
+
+#: forms.py:487 forms.py:502
+msgid "7 days ago"
+msgstr ""
+
+#: forms.py:488 forms.py:503
+msgid "28 days ago"
+msgstr ""
+
+#: forms.py:489 forms.py:504
+msgid "90 days ago"
+msgstr ""
+
+#: forms.py:490 forms.py:505
+msgid "1 year ago"
+msgstr ""
+
+#: forms.py:492
+msgid ""
+"Timestamp from filter. This supports free form typing and natural "
+"language as in '1 day ago', '28 days' or '3 years'"
+msgstr ""
+
+#: forms.py:497
+msgid "Until"
+msgstr ""
+
+#: forms.py:509
+msgid "Max Bubble Size"
+msgstr ""
+
+#: forms.py:522
+msgid "Whisker/outlier options"
+msgstr ""
+
+#: forms.py:524
+msgid "Determines how whiskers and outliers are calculated."
+msgstr ""
+
+#: forms.py:527
+msgid "Tukey"
+msgstr ""
+
+#: forms.py:528
+msgid "Min/max (no outliers)"
+msgstr ""
+
+#: forms.py:529
+msgid "2/98 percentiles"
+msgstr ""
+
+#: forms.py:530
+msgid "9/91 percentiles"
+msgstr ""
+
+#: forms.py:534
+msgid "Ratio"
+msgstr ""
+
+#: forms.py:536
+msgid "Target aspect ratio for treemap tiles."
+msgstr ""
+
+#: forms.py:539 viz.py:981 viz.py:1030
+msgid "Number format"
+msgstr ""
+
+#: forms.py:552
+msgid "Row limit"
+msgstr ""
+
+#: forms.py:558
+msgid "Series limit"
+msgstr ""
+
+#: forms.py:561
+msgid "Limits the number of time series that get displayed"
+msgstr ""
+
+#: forms.py:565
+msgid "Sort By"
+msgstr ""
+
+#: forms.py:568
+msgid "Metric used to define the top series"
+msgstr ""
+
+#: forms.py:571
+msgid "Rolling"
+msgstr ""
+
+#: forms.py:574
+msgid ""
+"Defines a rolling window function to apply, works along with the "
+"[Periods] text box"
+msgstr ""
+
+#: forms.py:579
+msgid "Periods"
+msgstr ""
+
+#: forms.py:581
+msgid ""
+"Defines the size of the rolling window function, relative to the time "
+"granularity selected"
+msgstr ""
+
+#: forms.py:586 viz.py:1392
+msgid "Series"
+msgstr ""
+
+#: forms.py:589
+msgid ""
+"Defines the grouping of entities. Each series is shown as a specific "
+"color on the chart and has a legend toggle"
+msgstr ""
+
+#: forms.py:595
+msgid "Entity"
+msgstr ""
+
+#: forms.py:598
+msgid "This define the element to be plotted on the chart"
+msgstr ""
+
+#: forms.py:601
+msgid "X Axis"
+msgstr ""
+
+#: forms.py:604
+msgid "Metric assigned to the [X] axis"
+msgstr ""
+
+#: forms.py:607
+msgid "Y Axis"
+msgstr ""
+
+#: forms.py:610
+msgid "Metric assigned to the [Y] axis"
+msgstr ""
+
+#: forms.py:613
+msgid "Bubble Size"
+msgstr ""
+
+#: forms.py:618
+msgid "URL"
+msgstr ""
+
+#: forms.py:619
+msgid ""
+"The URL, this field is templated, so you can integrate {{ width }} and/or"
+" {{ height }} in your URL string."
+msgstr ""
+
+#: forms.py:626
+msgid "X Axis Label"
+msgstr ""
+
+#: forms.py:630
+msgid "Y Axis Label"
+msgstr ""
+
+#: forms.py:634
+msgid "Custom WHERE clause"
+msgstr ""
+
+#: forms.py:636
+msgid ""
+"The text in this box gets included in your query's WHERE clause, as an "
+"AND to other criteria. You can include complex expression, parenthesis "
+"and anything else supported by the backend it is directed towards."
+msgstr ""
+
+#: forms.py:643
+msgid "Custom HAVING clause"
+msgstr ""
+
+#: forms.py:645
+msgid ""
+"The text in this box gets included in your query's HAVING clause, as an "
+"AND to other criteria. You can include complex expression, parenthesis "
+"and anything else supported by the backend it is directed towards."
+msgstr ""
+
+#: forms.py:652
+msgid "Comparison Period Lag"
+msgstr ""
+
+#: forms.py:653
+msgid "Based on granularity, number of time periods to compare against"
+msgstr ""
+
+#: forms.py:658
+msgid "Comparison suffix"
+msgstr ""
+
+#: forms.py:659
+msgid "Suffix to apply after the percentage display"
+msgstr ""
+
+#: forms.py:662
+msgid "Table Timestamp Format"
+msgstr ""
+
+#: forms.py:665
+msgid "Timestamp Format"
+msgstr ""
+
+#: forms.py:668
+msgid "Series Height"
+msgstr ""
+
+#: forms.py:671
+msgid "Pixel height of each series"
+msgstr ""
+
+#: forms.py:674
+msgid "X axis format"
+msgstr ""
+
+#: forms.py:680
+msgid "Y axis format"
+msgstr ""
+
+#: forms.py:693
+msgid "Markup Type"
+msgstr ""
+
+#: forms.py:695
+msgid "markdown"
+msgstr ""
+
+#: forms.py:696
+msgid "html"
+msgstr ""
+
+#: forms.py:699
+msgid "Pick your favorite markup language"
+msgstr ""
+
+#: forms.py:702
+msgid "Rotation"
+msgstr ""
+
+#: forms.py:704
+msgid "random"
+msgstr ""
+
+#: forms.py:705
+msgid "flat"
+msgstr ""
+
+#: forms.py:706
+msgid "square"
+msgstr ""
+
+#: forms.py:709
+msgid "Rotation to apply to words in the cloud"
+msgstr ""
+
+#: forms.py:712
+msgid "Line Style"
+msgstr ""
+
+#: forms.py:714
+msgid "linear"
+msgstr ""
+
+#: forms.py:715
+msgid "basis"
+msgstr ""
+
+#: forms.py:716
+msgid "cardinal"
+msgstr ""
+
+#: forms.py:717
+msgid "monotone"
+msgstr ""
+
+#: forms.py:718
+msgid "step-before"
+msgstr ""
+
+#: forms.py:719
+msgid "step-after"
+msgstr ""
+
+#: forms.py:722
+msgid "Line interpolation as defined by d3.js"
+msgstr ""
+
+#: forms.py:725
+msgid "Label Type"
+msgstr ""
+
+#: forms.py:728
+msgid "Category Name"
+msgstr ""
+
+#: forms.py:729
+msgid "Value"
+msgstr ""
+
+#: forms.py:730
+msgid "Percentage"
+msgstr ""
+
+#: forms.py:732
+msgid "What should be shown on the label?"
+msgstr ""
+
+#: forms.py:735
+msgid "Code"
+msgstr ""
+
+#: forms.py:736
+msgid "Put your code here"
+msgstr ""
+
+#: forms.py:740
+msgid "Aggregation function"
+msgstr ""
+
+#: forms.py:745
+msgid "max"
+msgstr ""
+
+#: forms.py:747
+msgid "stdev"
+msgstr ""
+
+#: forms.py:748
+msgid "var"
+msgstr ""
+
+#: forms.py:751
+msgid ""
+"Aggregate function to apply when pivoting and computing the total rows "
+"and columns"
+msgstr ""
+
+#: forms.py:756
+msgid "Font Size From"
+msgstr ""
+
+#: forms.py:758
+msgid "Font size for the smallest value in the list"
+msgstr ""
+
+#: forms.py:761
+msgid "Font Size To"
+msgstr ""
+
+#: forms.py:763
+msgid "Font size for the biggest value in the list"
+msgstr ""
+
+#: forms.py:766
+msgid "Range Filter"
+msgstr ""
+
+#: forms.py:768
+msgid "Whether to display the time range interactive selector"
+msgstr ""
+
+#: forms.py:772
+msgid "Date Filter"
+msgstr ""
+
+#: forms.py:774
+msgid "Whether to include a time filter"
+msgstr ""
+
+#: forms.py:777
+msgid "Data Table"
+msgstr ""
+
+#: forms.py:779
+msgid "Whether to display the interactive data table"
+msgstr ""
+
+#: forms.py:782
+msgid "Search Box"
+msgstr ""
+
+#: forms.py:784
+msgid "Whether to include a client side search box"
+msgstr ""
+
+#: forms.py:788
+msgid "Table Filter"
+msgstr ""
+
+#: forms.py:790
+msgid "Whether to apply filter when table cell is clicked"
+msgstr ""
+
+#: forms.py:794
+msgid "Show Bubbles"
+msgstr ""
+
+#: forms.py:796
+msgid "Whether to display bubbles on top of countries"
+msgstr ""
+
+#: forms.py:800
+msgid "Legend"
+msgstr ""
+
+#: forms.py:802
+msgid "Whether to display the legend (toggles)"
+msgstr ""
+
+#: forms.py:805
+msgid "X bounds"
+msgstr ""
+
+#: forms.py:807
+msgid "Whether to display the min and max values of the X axis"
+msgstr ""
+
+#: forms.py:811
+msgid "Rich Tooltip"
+msgstr ""
+
+#: forms.py:813
+msgid "The rich tooltip shows a list of all series for that point in time"
+msgstr ""
+
+#: forms.py:818
+msgid "Y Axis Zero"
+msgstr ""
+
+#: forms.py:820
+msgid "Force the Y axis to start at 0 instead of the minimum value"
+msgstr ""
+
+#: forms.py:825
+msgid "Y Log"
+msgstr ""
+
+#: forms.py:827
+msgid "Use a log scale for the Y axis"
+msgstr ""
+
+#: forms.py:830
+msgid "X Log"
+msgstr ""
+
+#: forms.py:832
+msgid "Use a log scale for the X axis"
+msgstr ""
+
+#: forms.py:835
+msgid "Donut"
+msgstr ""
+
+#: forms.py:837
+msgid "Do you want a donut or a pie?"
+msgstr ""
+
+#: forms.py:840
+msgid "Put labels outside"
+msgstr ""
+
+#: forms.py:842
+msgid "Put the labels outside the pie?"
+msgstr ""
+
+#: forms.py:845
+msgid "Contribution"
+msgstr ""
+
+#: forms.py:847
+msgid "Compute the contribution to the total"
+msgstr ""
+
+#: forms.py:850
+msgid "Period Ratio"
+msgstr ""
+
+#: forms.py:853
+msgid ""
+"[integer] Number of period to compare against, this is relative to the "
+"granularity selected"
+msgstr ""
+
+#: forms.py:858
+msgid "Period Ratio Type"
+msgstr ""
+
+#: forms.py:861
+msgid "factor"
+msgstr ""
+
+#: forms.py:862
+msgid "growth"
+msgstr ""
+
+#: forms.py:863
+msgid "value"
+msgstr ""
+
+#: forms.py:865
+msgid ""
+"`factor` means (new/previous), `growth` is ((new/previous) - 1), `value` "
+"is (new-previous)"
+msgstr ""
+
+#: forms.py:870
+msgid "Time Shift"
+msgstr ""
+
+#: forms.py:872
+msgid ""
+"Overlay a timeseries from a relative time period. Expects relative time "
+"delta in natural language (example:  24 hours, 7 days, 56 weeks, 365 days"
+msgstr ""
+
+#: forms.py:879
+msgid "Subheader"
+msgstr ""
+
+#: forms.py:880
+msgid "Description text that shows up below your Big Number"
+msgstr ""
+
+#: forms.py:887
+msgid ""
+"'count' is COUNT(*) if a group by is used. Numerical columns will be "
+"aggregated with the aggregator. Non-numerical columns will be used to "
+"label points. Leave empty to get a count of points in each cluster."
+msgstr ""
+
+#: forms.py:904
+msgid "Base layer map style"
+msgstr ""
+
+#: forms.py:907
+msgid "Clustering Radius"
+msgstr ""
+
+#: forms.py:920
+msgid ""
+"The radius (in pixels) the algorithm uses to define a cluster. Choose 0 "
+"to turn off clustering, but beware that a large number of points (>1000) "
+"will cause lag."
+msgstr ""
+
+#: forms.py:926
+msgid "Point Radius"
+msgstr ""
+
+#: forms.py:929
+msgid ""
+"The radius of individual points (ones that are not in a cluster). Either "
+"a numerical column or 'Auto', which scales the point based on the largest"
+" cluster"
+msgstr ""
+
+#: forms.py:935
+msgid "Point Radius Unit"
+msgstr ""
+
+#: forms.py:942
+msgid "The unit of measure for the specified point radius"
+msgstr ""
+
+#: forms.py:945
+msgid "Opacity"
+msgstr ""
+
+#: forms.py:947
+msgid "Opacity of all clusters, points, and labels. Between 0 and 1."
+msgstr ""
+
+#: forms.py:952
+msgid "Zoom"
+msgstr ""
+
+#: forms.py:955
+msgid "Zoom level of the map"
+msgstr ""
+
+#: forms.py:959
+msgid "Default latitude"
+msgstr ""
+
+#: forms.py:961
+msgid "Latitude of default viewport"
+msgstr ""
+
+#: forms.py:965
+msgid "Default longitude"
+msgstr ""
+
+#: forms.py:967
+msgid "Longitude of default viewport"
+msgstr ""
+
+#: forms.py:971
+msgid "Live render"
+msgstr ""
+
+#: forms.py:973
+msgid "Points and clusters will update as viewport is being changed"
+msgstr ""
+
+#: forms.py:978
+msgid "RGB Color"
+msgstr ""
+
+#: forms.py:988
+msgid "The color for points and clusters in RGB"
+msgstr ""
+
+#: forms.py:991
+msgid "Ranges"
+msgstr ""
+
+#: forms.py:993
+msgid "Ranges to highlight with shading"
+msgstr ""
+
+#: forms.py:996
+msgid "Range labels"
+msgstr ""
+
+#: forms.py:998
+msgid "Labels for the ranges"
+msgstr ""
+
+#: forms.py:1001
+msgid "Markers"
+msgstr ""
+
+#: forms.py:1003
+msgid "List of values to mark with triangles"
+msgstr ""
+
+#: forms.py:1006
+msgid "Marker labels"
+msgstr ""
+
+#: forms.py:1008
+msgid "Labels for the markers"
+msgstr ""
+
+#: forms.py:1011
+msgid "Marker lines"
+msgstr ""
+
+#: forms.py:1013
+msgid "List of values to mark with lines"
+msgstr ""
+
+#: forms.py:1016
+msgid "Marker line labels"
+msgstr ""
+
+#: forms.py:1018
+msgid "Labels for the marker lines"
+msgstr ""
+
+#: forms.py:1081
+msgid "SQL"
+msgstr ""
+
+#: forms.py:1083
+msgid "This section exposes ways to include snippets of SQL in your query"
+msgstr ""
+
+#: forms.py:1094
+msgid "Time Grain"
+msgstr ""
+
+#: forms.py:1097
+msgid ""
+"The time granularity for the visualization. This applies a date "
+"transformation to alter your time column and defines a new time "
+"granularity.The options here are defined on a per database engine basis "
+"in the Superset source code"
+msgstr ""
+
+#: forms.py:1132 forms.py:1136
+msgid "Filter 1"
+msgstr ""
+
+#: forms.py:1141
+msgid "Super"
+msgstr ""
+
+#: forms.py:1145
+msgid "Time"
+msgstr ""
+
+#: forms.py:1150
+msgid "Time related form attributes"
+msgstr ""
+
+#: models.py:1019
+msgid ""
+"Datetime column not provided as part table configuration and is required "
+"by this type of chart"
+msgstr ""
+
+#: models.py:2138
+msgid "No data was returned."
+msgstr ""
+
+#: views.py:347
+msgid ""
+"Whether to make this column available as a [Time Granularity] option, "
+"column has to be DATETIME or DATETIME-like"
+msgstr ""
+
+#: views.py:374 views.py:404
+msgid "Column"
+msgstr ""
+
+#: views.py:375 views.py:462 views.py:502
+msgid "Verbose Name"
+msgstr ""
+
+#: views.py:376 views.py:461 views.py:501 views.py:824 views.py:1048
+msgid "Description"
+msgstr ""
+
+#: views.py:377 views.py:407
+msgid "Groupable"
+msgstr ""
+
+#: views.py:378 views.py:408
+msgid "Filterable"
+msgstr ""
+
+#: views.py:379 views.py:465 views.py:670 views.py:830
+msgid "Table"
+msgstr ""
+
+#: views.py:380 views.py:409
+msgid "Count Distinct"
+msgstr ""
+
+#: views.py:381 views.py:410
+msgid "Sum"
+msgstr ""
+
+#: views.py:382 views.py:411
+msgid "Min"
+msgstr ""
+
+#: views.py:383 views.py:412
+msgid "Max"
+msgstr ""
+
+#: views.py:384
+msgid "Expression"
+msgstr ""
+
+#: views.py:385
+msgid "Is temporal"
+msgstr ""
+
+#: views.py:386
+msgid "Datetime Format"
+msgstr ""
+
+#: views.py:387
+msgid "Database Expression"
+msgstr ""
+
+#: views.py:405 views.py:463 views.py:503
+msgid "Type"
+msgstr ""
+
+#: views.py:406 views.py:740 views.py:823
+msgid "Datasource"
+msgstr ""
+
+#: views.py:445 views.py:494
+msgid ""
+"Whether the access to this metric is restricted to certain roles. Only "
+"roles with the permission 'metric access on XXX (the name of this "
+"metric)' are allowed to access this metric"
+msgstr ""
+
+#: views.py:464
+msgid "SQL Expression"
+msgstr ""
+
+#: views.py:504 views.py:997
+msgid "JSON"
+msgstr ""
+
+#: views.py:505
+msgid "Druid Datasource"
+msgstr ""
+
+#: views.py:551
+msgid "Expose this DB in SQL Lab"
+msgstr ""
+
+#: views.py:552
+msgid ""
+"Allow users to run synchronous queries, this is the default and should "
+"work well for queries that can be executed within a web request scope "
+"(<~1 minute)"
+msgstr ""
+
+#: views.py:556
+msgid ""
+"Allow users to run queries, against an async backend. This assumes that "
+"you have a Celery worker setup as well as a results backend."
+msgstr ""
+
+#: views.py:560
+msgid "Allow CREATE TABLE AS option in SQL Lab"
+msgstr ""
+
+#: views.py:561
+msgid ""
+"Allow users to run non-SELECT statements (UPDATE, DELETE, CREATE, ...) in"
+" SQL Lab"
+msgstr ""
+
+#: views.py:565
+msgid ""
+"When allowing CREATE TABLE AS option in SQL Lab, this option forces the "
+"table to be created in this schema"
+msgstr ""
+
+#: views.py:579
+msgid "Expose in SQL Lab"
+msgstr ""
+
+#: views.py:580
+msgid "Allow CREATE TABLE AS"
+msgstr ""
+
+#: views.py:581
+msgid "Allow DML"
+msgstr ""
+
+#: views.py:582
+msgid "CTAS Schema"
+msgstr ""
+
+#: views.py:583 views.py:672
+msgid "Database"
+msgstr ""
+
+#: views.py:584 views.py:821 views.py:925
+msgid "Creator"
+msgstr ""
+
+#: views.py:585 views.py:673
+msgid "Last Changed"
+msgstr ""
+
+#: views.py:586
+msgid "SQLAlchemy URI"
+msgstr ""
+
+#: views.py:587 views.py:678 views.py:820 views.py:1054
+msgid "Cache Timeout"
+msgstr ""
+
+#: views.py:588
+msgid "Extra"
+msgstr ""
+
+#: views.py:654 views.py:1039
+msgid "Timezone offset (in hours) for this datasource"
+msgstr ""
+
+#: views.py:655
+msgid "Name of the table that exists in the source database"
+msgstr ""
+
+#: views.py:657
+msgid "Schema, as used only in some databases like Postgres, Redshift and DB2"
+msgstr ""
+
+#: views.py:663
+msgid ""
+"This fields acts a Superset view, meaning that Superset will run a query "
+"against this string as a subquery."
+msgstr ""
+
+#: views.py:671
+msgid "Changed By"
+msgstr ""
+
+#: views.py:674 views.py:1050
+msgid "Is Featured"
+msgstr ""
+
+#: views.py:675
+msgid "Schema"
+msgstr ""
+
+#: views.py:676 views.py:1052
+msgid "Default Endpoint"
+msgstr ""
+
+#: views.py:677
+msgid "Offset"
+msgstr ""
+
+#: views.py:709
+msgid ""
+"The table was created. As part of this two phase configuration process, "
+"you should now click the edit button by the new table to configure it."
+msgstr ""
+
+#: views.py:737 views.py:994
+msgid "User"
+msgstr ""
+
+#: views.py:738
+msgid "User Roles"
+msgstr ""
+
+#: views.py:739
+msgid "Database URL"
+msgstr ""
+
+#: views.py:741
+msgid "Roles to grant"
+msgstr ""
+
+#: views.py:742
+msgid "Created On"
+msgstr ""
+
+#: views.py:764 views.py:1047
+msgid "Cluster"
+msgstr ""
+
+#: views.py:765
+msgid "Coordinator Host"
+msgstr ""
+
+#: views.py:766
+msgid "Coordinator Port"
+msgstr ""
+
+#: views.py:767
+msgid "Coordinator Endpoint"
+msgstr ""
+
+#: views.py:768
+msgid "Broker Host"
+msgstr ""
+
+#: views.py:769
+msgid "Broker Port"
+msgstr ""
+
+#: views.py:770
+msgid "Broker Endpoint"
+msgstr ""
+
+#: views.py:809
+msgid ""
+"These parameters are generated dynamically when clicking the save or "
+"overwrite button in the explore view. This JSON object is exposed here "
+"for reference and for power users who may want to alter specific "
+"parameters."
+msgstr ""
+
+#: views.py:814
+msgid "Duration (in seconds) of the caching timeout for this slice."
+msgstr ""
+
+#: templates/superset/welcome.html:20 views.py:822
+msgid "Dashboards"
+msgstr ""
+
+#: views.py:825
+msgid "Last Modified"
+msgstr ""
+
+#: views.py:826 views.py:924
+msgid "Owners"
+msgstr ""
+
+#: views.py:827
+msgid "Parameters"
+msgstr ""
+
+#: views.py:828 views.py:873
+msgid "Slice"
+msgstr ""
+
+#: views.py:829
+msgid "Name"
+msgstr ""
+
+#: views.py:831
+msgid "Visualization Type"
+msgstr ""
+
+#: views.py:852
+msgid "Click on a {} link to create a Slice"
+msgstr ""
+
+#: views.py:897
+msgid ""
+"This json object describes the positioning of the widgets in the "
+"dashboard. It is dynamically generated when adjusting the widgets size "
+"and positions by using drag & drop in the dashboard view"
+msgstr ""
+
+#: views.py:902
+msgid ""
+"The css for individual dashboards can be altered here, or in the "
+"dashboard view where changes are immediately visible"
+msgstr ""
+
+#: views.py:906
+msgid "To get a readable URL for your dashboard"
+msgstr ""
+
+#: views.py:907
+msgid ""
+"This JSON object is generated dynamically when clicking the save or "
+"overwrite button in the dashboard view. It is exposed here for reference "
+"and for power users who may want to alter specific parameters."
+msgstr ""
+
+#: views.py:912
+msgid "Owners is a list of users who can alter the dashboard."
+msgstr ""
+
+#: views.py:920
+msgid "Dashboard"
+msgstr ""
+
+#: views.py:921
+msgid "Title"
+msgstr ""
+
+#: views.py:922
+msgid "Slug"
+msgstr ""
+
+#: views.py:923
+msgid "Slices"
+msgstr ""
+
+#: views.py:926
+msgid "Modified"
+msgstr ""
+
+#: views.py:927
+msgid "Position JSON"
+msgstr ""
+
+#: views.py:928
+msgid "CSS"
+msgstr ""
+
+#: views.py:929
+msgid "JSON Metadata"
+msgstr ""
+
+#: views.py:930
+msgid "Underlying Tables"
+msgstr ""
+
+#: views.py:995
+msgid "Action"
+msgstr ""
+
+#: views.py:996
+msgid "dttm"
+msgstr ""
+
+#: views.py:1046
+msgid "Data Source"
+msgstr ""
+
+#: views.py:1049
+msgid "Owner"
+msgstr ""
+
+#: views.py:1051
+msgid "Is Hidden"
+msgstr ""
+
+#: views.py:1053
+msgid "Time Offset"
+msgstr ""
+
+#: viz.py:408
+msgid "Table View"
+msgstr ""
+
+#: viz.py:411
+msgid "GROUP BY"
+msgstr ""
+
+#: viz.py:412
+msgid "Use this section if you want a query that aggregates"
+msgstr ""
+
+#: viz.py:415
+msgid "NOT GROUPED BY"
+msgstr ""
+
+#: viz.py:416
+msgid "Use this section if you want to query atomic rows"
+msgstr ""
+
+#: viz.py:419
+msgid "Options"
+msgstr ""
+
+#: viz.py:472
+msgid "Pivot Table"
+msgstr ""
+
+#: viz.py:534
+msgid "Markup"
+msgstr ""
+
+#: viz.py:558
+msgid "Separator"
+msgstr ""
+
+#: viz.py:581
+msgid "Word Cloud"
+msgstr ""
+
+#: viz.py:613
+msgid "Treemap"
+msgstr ""
+
+#: viz.py:623 viz.py:738 viz.py:845 viz.py:1074 viz.py:1226 viz.py:1255
+#: viz.py:1377 viz.py:1888
+msgid "Chart Options"
+msgstr ""
+
+#: viz.py:657
+msgid "Calendar Heatmap"
+msgstr ""
+
+#: viz.py:728
+msgid "Box Plot"
+msgstr ""
+
+#: viz.py:835
+msgid "Bubble Chart"
+msgstr ""
+
+#: viz.py:904
+msgid "Bullet Chart"
+msgstr ""
+
+#: viz.py:967
+msgid "Big Number with Trendline"
+msgstr ""
+
+#: viz.py:1017
+msgid "Big Number"
+msgstr ""
+
+#: viz.py:1063
+msgid "Time Series - Line Chart"
+msgstr ""
+
+#: viz.py:1085
+msgid "Advanced Analytics"
+msgstr ""
+
+#: viz.py:1086
+msgid ""
+"This section contains options that allow for advanced analytical post "
+"processing of query results"
+msgstr ""
+
+#: viz.py:1224
+msgid "Time Series - Bar Chart"
+msgstr ""
+
+#: viz.py:1244
+msgid "Time Series - Percent Change"
+msgstr ""
+
+#: viz.py:1252
+msgid "Time Series - Stacked"
+msgstr ""
+
+#: viz.py:1271
+msgid "Distribution - NVD3 - Pie Chart"
+msgstr ""
+
+#: viz.py:1309
+msgid "Histogram"
+msgstr ""
+
+#: viz.py:1318
+msgid "Histogram Options"
+msgstr ""
+
+#: viz.py:1326
+msgid "Numeric Column"
+msgstr ""
+
+#: viz.py:1327
+msgid "Select the numeric column to draw the histogram"
+msgstr ""
+
+#: viz.py:1330
+msgid "No of Bins"
+msgstr ""
+
+#: viz.py:1331
+msgid "Select number of bins for the histogram"
+msgstr ""
+
+#: viz.py:1374
+msgid "Distribution - Bar Chart"
+msgstr ""
+
+#: viz.py:1395
+msgid "Breakdowns"
+msgstr ""
+
+#: viz.py:1396
+msgid "Defines how each series is broken down"
+msgstr ""
+
+#: viz.py:1461
+msgid "Sunburst"
+msgstr ""
+
+#: viz.py:1476
+msgid "Primary Metric"
+msgstr ""
+
+#: viz.py:1477
+msgid "The primary metric is used to define the arc segment sizes"
+msgstr ""
+
+#: viz.py:1482
+msgid "Secondary Metric"
+msgstr ""
+
+#: viz.py:1483
+msgid ""
+"This secondary metric is used to define the color as a ratio against the "
+"primary metric. If the two metrics match, color is mapped level groups"
+msgstr ""
+
+#: viz.py:1489
+msgid "Hierarchy"
+msgstr ""
+
+#: viz.py:1490
+msgid "This defines the level of the hierarchy"
+msgstr ""
+
+#: viz.py:1526
+msgid "Sankey"
+msgstr ""
+
+#: viz.py:1539 viz.py:1609
+msgid "Source / Target"
+msgstr ""
+
+#: viz.py:1540 viz.py:1610
+msgid "Choose a source and a target"
+msgstr ""
+
+#: viz.py:1590
+msgid "Directed Force Layout"
+msgstr ""
+
+#: viz.py:1601
+msgid "Force Layout"
+msgstr ""
+
+#: viz.py:1632
+msgid "World Map"
+msgstr ""
+
+#: viz.py:1643
+msgid "Bubbles"
+msgstr ""
+
+#: viz.py:1652
+msgid "Country Field"
+msgstr ""
+
+#: viz.py:1653
+msgid "3 letter code of the country"
+msgstr ""
+
+#: viz.py:1656
+msgid "Metric for color"
+msgstr ""
+
+#: viz.py:1657
+msgid "Metric that defines the color of the country"
+msgstr ""
+
+#: viz.py:1660
+msgid "Bubble size"
+msgstr ""
+
+#: viz.py:1661
+msgid "Metric that defines the size of the bubble"
+msgstr ""
+
+#: templates/superset/explore.html:107 viz.py:1711
+msgid "Filters"
+msgstr ""
+
+#: viz.py:1724
+msgid "Filter fields"
+msgstr ""
+
+#: viz.py:1725
+msgid "The fields you want to filter on"
+msgstr ""
+
+#: viz.py:1761
+msgid "iFrame"
+msgstr ""
+
+#: viz.py:1779
+msgid "Parallel Coordinates"
+msgstr ""
+
+#: viz.py:1815
+msgid "Heatmap"
+msgstr ""
+
+#: viz.py:1828
+msgid "Heatmap Options"
+msgstr ""
+
+#: viz.py:1883
+msgid "Horizon Charts"
+msgstr ""
+
+#: viz.py:1899
+msgid "Mapbox"
+msgstr ""
+
+#: viz.py:1913
+msgid "Points"
+msgstr ""
+
+#: viz.py:1919
+msgid "Labelling"
+msgstr ""
+
+#: viz.py:1925
+msgid "Visual Tweaks"
+msgstr ""
+
+#: viz.py:1932
+msgid "Viewport"
+msgstr ""
+
+#: viz.py:1942
+msgid "Longitude"
+msgstr ""
+
+#: viz.py:1943
+msgid "Column containing longitude data"
+msgstr ""
+
+#: viz.py:1946
+msgid "Latitude"
+msgstr ""
+
+#: viz.py:1947
+msgid "Column containing latitude data"
+msgstr ""
+
+#: viz.py:1950
+msgid "Cluster label aggregator"
+msgstr ""
+
+#: viz.py:1951
+msgid ""
+"Aggregate function applied to the list of points in each cluster to "
+"produce the cluster label."
+msgstr ""
+
+#: viz.py:1956
+msgid "Tooltip"
+msgstr ""
+
+#: viz.py:1957
+msgid "Show a tooltip when hovering over points and clusters describing the label"
+msgstr ""
+
+#: viz.py:1962
+msgid ""
+"One or many fields to group by. If grouping, latitude and longitude "
+"columns must be present."
+msgstr ""
+
+#: templates/appbuilder/navbar_right.html:41
+msgid "Profile"
+msgstr ""
+
+#: templates/appbuilder/navbar_right.html:42
+msgid "Logout"
+msgstr ""
+
+#: templates/appbuilder/navbar_right.html:47
+msgid "Login"
+msgstr ""
+
+#: templates/superset/explore.html:110
+msgid "Filters are defined using comma delimited strings as in <US,FR,Other>"
+msgstr ""
+
+#: templates/superset/explore.html:111 templates/superset/explore.html:147
+msgid "Leave the value field empty to filter empty strings or nulls"
+msgstr ""
+
+#: templates/superset/explore.html:112
+msgid ""
+"For filters with comma in values, wrap them in single quotes,\n"
+"                      as in <NY, 'Tahoe, CA', DC>"
+msgstr ""
+
+#: templates/superset/explore.html:132
+msgid "Add filter"
+msgstr ""
+
+#: templates/superset/explore.html:147
+msgid "The filters to apply after post-aggregation."
+msgstr ""
+
+#: templates/superset/explore.html:198
+msgid "Force refresh"
+msgstr ""
+
+#: templates/superset/explore.html:204
+msgid "Query timer"
+msgstr ""
+
+#: templates/superset/explore.html:206
+msgid "0 sec"
+msgstr ""
+
+#: templates/superset/explore.html:239
+msgid "Datasource Description"
+msgstr ""
+
+#: templates/superset/explore.html:245
+msgid "Close"
+msgstr ""
+
+#: templates/superset/explore.html:257
+msgid "Save a Slice"
+msgstr ""
+
+#: templates/superset/explore.html:286
+msgid "Save"
+msgstr ""
+
+#: templates/superset/explore.html:289
+msgid "Save & go to dashboard"
+msgstr ""
+
+#: templates/superset/explore.html:292
+#: templates/superset/request_access.html:16
+msgid "Cancel"
+msgstr ""
+
+#: templates/superset/import_dashboards.html:11
+msgid "Import"
+msgstr ""
+
+#: templates/superset/request_access.html:2
+msgid "No Access!"
+msgstr ""
+
+#: templates/superset/request_access.html:7
+#, python-format
+msgid "You do not have permissions to access the datasource(s): %(name)s."
+msgstr ""
+
+#: templates/superset/request_access.html:13
+msgid "Request Permissions"
+msgstr ""
+
+#: templates/superset/welcome.html:10
+msgid "Welcome!"
+msgstr ""
+
+#: templates/superset/models/database/macros.html:4
+msgid "Test Connection"
+msgstr ""
+
