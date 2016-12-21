@@ -949,7 +949,7 @@ class DashboardModelView(SupersetModelView, DeleteMixin):  # noqa
 
     @action("mulexport", "Export", "Export dashboards?", "fa-database")
     def mulexport(self, items):
-        ids = ''.join('&id={}'.format(d.id) for d in items)
+        ids = ''.join('&id={}'.format(d.id) for d in set(items))
         return redirect(
             '/dashboardmodelview/export_dashboards_form?{}'.format(ids[1:]))
 
