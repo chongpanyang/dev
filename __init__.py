@@ -16,7 +16,7 @@ from flask_migrate import Migrate
 from superset.source_registry import SourceRegistry
 from werkzeug.contrib.fixers import ProxyFix
 from superset import utils
-
+from flask_babel import Babel,gettext as _
 
 APP_DIR = os.path.dirname(__file__)
 CONFIG_MODULE = os.environ.get('SUPERSET_CONFIG', 'superset.config')
@@ -24,6 +24,7 @@ CONFIG_MODULE = os.environ.get('SUPERSET_CONFIG', 'superset.config')
 app = Flask(__name__)
 app.config.from_object(CONFIG_MODULE)
 conf = app.config
+babel = Babel(app)
 
 if not app.debug:
     # In production mode, add log handler to sys.stderr.
