@@ -955,8 +955,8 @@ class DashboardModelView(SupersetModelView, DeleteMixin):  # noqa
 
     @expose("/export_dashboards_form")
     def download_dashboards(self):
-        if request.args.get('action') == 'go':
-            ids = request.args.getlist('id')
+        ids = request.args.getlist('id')
+        if ids:
             return Response(
                 models.Dashboard.export_dashboards(ids),
                 headers=generate_download_headers("pickle"),
