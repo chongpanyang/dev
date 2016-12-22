@@ -124,7 +124,7 @@ PUBLIC_ROLE_LIKE_GAMMA = False
 # Setup default language
 BABEL_DEFAULT_LOCALE = 'zh'
 # Your application default translation path
-BABEL_DEFAULT_FOLDER = 'translations'
+BABEL_DEFAULT_FOLDER = 'babel/translations'
 # The allowed translation for you app
 LANGUAGES = {
    # 'en': {'flag': 'us', 'name': 'English'},
