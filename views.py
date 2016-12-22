@@ -609,6 +609,16 @@ appbuilder.add_link(
     category_icon='fa-wrench',)
 
 
+appbuilder.add_link(
+    'Import Files',
+    label=__("Import Files"),
+    href='/superset/import_files',
+    icon="fa-files-o",
+    category='Sources',
+    category_label=__("Sources"),
+    category_icon='fa-database',)
+
+
 appbuilder.add_view(
     DatabaseView,
     "Databases",
@@ -1411,6 +1421,23 @@ class Superset(BaseSupersetView):
             db.session.commit()
             return redirect('/dashboardmodelview/list/')
         return self.render_template('superset/import_dashboards.html')
+
+    @expose("/import_files", methods=['GET', 'POST'])
+    @log_this
+    def import_files(self):
+        """Overrides the dashboards using pickled instances from the file."""
+        f = request.files.get('file')
+        if request.method == 'POST' and f:
+            current_tt = int(time.time())
+            data = pickle.load(f)
+            for table in data['datasources']:
+                models.SqlaTable.import_obj(table, import_time=current_tt)
+            for dashboard in data['dashboards']:
+                models.Dashboard.import_obj(
+                    dashboard, import_time=current_tt)
+            db.session.commit()
+            return redirect('/dashboardmodelview/list/')
+        return self.render_template('superset/import_files.html')
 
     @log_this
     @has_access
