@@ -1428,15 +1428,7 @@ class Superset(BaseSupersetView):
         """Overrides the dashboards using pickled instances from the file."""
         f = request.files.get('file')
         if request.method == 'POST' and f:
-            current_tt = int(time.time())
-            data = pickle.load(f)
-            for table in data['datasources']:
-                models.SqlaTable.import_obj(table, import_time=current_tt)
-            for dashboard in data['dashboards']:
-                models.Dashboard.import_obj(
-                    dashboard, import_time=current_tt)
-            db.session.commit()
-            return redirect('/dashboardmodelview/list/')
+        	flash("hello stranger","alert")  	
         return self.render_template('superset/import_files.html')
 
     @log_this
@@ -2229,7 +2221,7 @@ class Superset(BaseSupersetView):
         params = "&".join([k + '=' + v for k, v in params.items()])
         url = '/superset/explore/table/{table.id}/?{params}'.format(**locals())
         return redirect(url)
-
+	
     @has_access
     @expose("/table/<database_id>/<table_name>/<schema>/")
     @log_this
@@ -2318,6 +2310,12 @@ class Superset(BaseSupersetView):
             "superset/ajah.html",
             content=s
         )
+	
+	
+	
+    @expose("/test")
+    def test(self):
+	return self.render_template('superset/test.html')
 
     @expose("/theme/")
     def theme(self):
@@ -2790,6 +2788,4 @@ def panoramix(url):  # noqa
 @app.route('/<regex("caravel\/.*"):url>')
 def caravel(url):  # noqa
     return redirect(request.full_path.replace('caravel', 'superset'))
-
-
 # ---------------------------------------------------------------------

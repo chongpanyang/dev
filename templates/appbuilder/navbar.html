@@ -2,7 +2,7 @@
 {% set languages = appbuilder.languages %}
 
 <div class="navbar navbar-static-top {{menu.extra_classes}}" role="navigation">
-  <div class="container{{ '-fluid' if not navbar_container else '' }}">
+  <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
         <span class="icon-bar"></span>
@@ -17,9 +17,6 @@
       </a>
     </div>
     <div class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-        {% include 'appbuilder/navbar_menu.html' %}
-      </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
           <a href="https://github.com/airbnb/superset" title="Superset's Github">

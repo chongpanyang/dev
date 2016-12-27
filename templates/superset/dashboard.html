@@ -5,6 +5,28 @@
   {% with filename="dashboard" %}
     {% include "superset/partials/_script_tag.html" %}
   {% endwith %}
+  
+  {% with filename="jquery.min" %}
+    {% include "superset/partials/_script_tag.html" %}
+  {% endwith %}
+
+  {% with filename="html2canvas" %}
+    {% include "superset/partials/_script_tag.html" %}
+  {% endwith %}
+  		
+  {% with filename="html2canvas.svg" %}
+    {% include "superset/partials/_script_tag.html" %}
+  {% endwith %}
+  
+ {% with filename="rgbcolor" %}
+    {% include "superset/partials/_script_tag.html" %}
+  {% endwith %}
+  
+ {% with filename="canvg" %}
+    {% include "superset/partials/_script_tag.html" %}
+  {% endwith %}
+	
+
 {% endblock %}
 {% block title %}[dashboard] {{ dashboard.dashboard_title }}{% endblock %}
 {% block body %}
@@ -13,6 +35,7 @@
   class="dashboard container-fluid"
   data-dashboard="{{ dashboard.json_data }}"
   data-context="{{ context }}"
+  id = "dashboard"	
 >
   {% include 'superset/flash_wrapper.html' %}
 

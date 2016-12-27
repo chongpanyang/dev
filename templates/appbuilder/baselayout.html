@@ -1,6 +1,17 @@
 {% extends 'appbuilder/init.html' %}
 {% import 'appbuilder/baselib.html' as baselib %}
 
+{% block head_js %}
+    {{super()}}
+    {% with filename="jquery.min" %}
+      {% include "superset/partials/_script_tag.html" %}
+    {% endwith %}
+
+    {% with filename="bootstrap.min" %} 
+      {% include "superset/partials/_script_tag.html" %} 
+    {% endwith %} 
+  {% endblock %}
+
 {% block body %}
     {% include 'appbuilder/general/confirm.html' %}
     {% include 'appbuilder/general/alert.html' %}
@@ -13,13 +24,21 @@
 
     {% block uncontained %}{% endblock %}
 
-    <div class="container">
-      <div class="row">
+    <div class="container-fluid">
+      <div class="row-fluid">
           {% block messages %}
             {% include 'superset/flash_wrapper.html' %}
-          {% endblock %}
-          {% block content %}
-          {% endblock %}
+          {% endblock %}	
+	   <div class="span2">
+              <ul class="nav nav-list">
+                  {% include 'appbuilder/navbar_menu.html' %}
+              </ul>
+          </div>
+          <div class="span10">
+       	  {% block content %} 
+          {% endblock %} 
+	  </div>
+
       </div>
     </div>
     <div class="container-fluid">
@@ -37,4 +56,5 @@
         </footer>
     {% endblock %}
 {% endblock %}
+
 
