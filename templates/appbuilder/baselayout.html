@@ -1,60 +1,57 @@
 {% extends 'appbuilder/init.html' %}
 {% import 'appbuilder/baselib.html' as baselib %}
 
-{% block head_js %}
-    {{super()}}
-    {% with filename="jquery.min" %}
-      {% include "superset/partials/_script_tag.html" %}
-    {% endwith %}
-
-    {% with filename="bootstrap.min" %} 
-      {% include "superset/partials/_script_tag.html" %} 
-    {% endwith %} 
-  {% endblock %}
 
 {% block body %}
     {% include 'appbuilder/general/confirm.html' %}
     {% include 'appbuilder/general/alert.html' %}
 
-    {% block navbar %}
-        <header class="top" role="header">
-        {% include 'appbuilder/navbar.html' %}
-        </header>
-    {% endblock %}
 
     {% block uncontained %}{% endblock %}
-
     <div class="container-fluid">
       <div class="row-fluid">
-          {% block messages %}
-            {% include 'superset/flash_wrapper.html' %}
-          {% endblock %}	
-	   <div class="span2">
-              <ul class="nav nav-list">
-                  {% include 'appbuilder/navbar_menu.html' %}
-              </ul>
+	<div class="span12">
+              {% block navbar %} 
+       		 <header class="top" role="header"> 
+        	{% include 'appbuilder/navbar.html' %} 
+       	      </header> 
+  	  {% endblock %} 
+	</div>
+      </div>	
+      <div class="row-fluid">
+	<span>  
+	 <div class="col-xs-2" style="width:14%;">
+	        {% block messages %} 
+               {% include 'superset/flash_wrapper.html' %} 
+               {% endblock %}
+	       <ul class="nav nav-list"> 
+                  {% include 'appbuilder/navbar_menu.html' %} 
+              </ul>  	
           </div>
-          <div class="span10">
-       	  {% block content %} 
+          <div class="col-xs-10">
+       	    {% block content %} 
+            {% endblock %} 
+	  
+            <div class="container-fluid"> 
+        	{% block content_fluid %} 
+       		 {% endblock %} 
+    	    </div> 
+            
+          {% block footer %} 
+        	<footer> 
+          	<div class="img-rounded nav-fixed-bottom"> 
+              <div class="container-fluid"> 
+                  {% include 'appbuilder/footer.html' %} 
+              	</div> 
+         	 </div> 
+      		  </footer> 
           {% endblock %} 
-	  </div>
 
+	  </div>
+	</span>
       </div>
     </div>
-    <div class="container-fluid">
-        {% block content_fluid %}
-        {% endblock %}
-    </div>
 
-    {% block footer %}
-        <footer>
-          <div class="img-rounded nav-fixed-bottom">
-              <div class="container-fluid">
-                  {% include 'appbuilder/footer.html' %}
-              </div>
-          </div>
-        </footer>
-    {% endblock %}
 {% endblock %}
 
 

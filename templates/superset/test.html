@@ -1,0 +1,49 @@
+{% extends "superset/basic.html" %}
+
+{% block head_js %}
+  {{ super() }}
+  <script src="http://static.blog.csdn.net/scripts/jquery.js" type="text/javascript"></script>	
+  {% with filename="html2canvas" %}
+    {% include "superset/partials/_script_tag.html" %}
+  {% endwith %}
+ <script  type="text/javascript" >  
+$(document).ready( function(){  
+		$(".example1").on("click", function(event) {  
+				event.preventDefault();  
+				html2canvas(document.getElementById("textArea"), {  
+				allowTaint: true,  
+				taintTest: false,  
+				onrendered: function(canvas) {  
+					canvas.id = "mycanvas";  
+					//document.body.appendChild(canvas);  
+					//生成base64图片数据  
+					var dataUrl = canvas.toDataURL();  
+					var newImg = document.createElement("img");  
+					newImg.src =  dataUrl;  
+					document.body.appendChild(newImg);  
+				}  
+			});  
+		});   
+	   
+});  
+           
+</script> 
+{% endblock %}
+{% block title %}test{% endblock %}
+{% block body %}
+     <body>
+
+        Hello!
+        <div class="" style="background-color: #abc;">
+            计算机天堂测试html5页面截图
+            <br>jsjtt.com
+        </div>
+
+        <textArea id="textArea" col="20" rows="10" ></textArea>
+        <input class="example1" type="button" value="button">
+        生成界面如下：
+    </body>
+{% endblock %}	
+
+
+  
