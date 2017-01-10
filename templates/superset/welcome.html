@@ -1,38 +1,210 @@
-{% extends "superset/basic.html" %}
-
-{% block head_js %}
-  {{ super() }}
-  {% with filename="welcome" %}
-    {% include "superset/partials/_script_tag.html" %}
-  {% endwith %}
-{% endblock %}
-
-{% block title %}{{ _("Welcome!") }}{% endblock %}
+{% extends 'appbuilder/init.html' %}
+{% import 'appbuilder/baselib.html' as baselib %}
 
 {% block body %}
-<div class="container welcome">
-  {% include 'superset/flash_wrapper.html' %}
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <div class="panel-title">
-        <div class="row">
-          <div class="col-md-6">
-            <h2>{{ _("Dashboards") }}</h2>
-          </div>
-          <div class="col-md-6">
-            <div class="search-container pull-right">
-              <i class="fa fa-search"></i>
-              <span class="search"></span>
-            </div>
-          </div>
-        </div>
+{{super()}}
+{% include 'appbuilder/general/confirm.html' %}
+{% include 'appbuilder/general/alert.html' %}
+
+{% block uncontained %}{% endblock %}
+<script> 
+    $("body").css("background","#E8EBED") 
+    $("body").css("overflow-y","hidden") 
+    $("div.navbar").css("background","white") 
+    $("div.navbar").css("box-shadow","0 0 6px 0 rgba(0,0,0,.12),0 10px 12px 0 rgba(170,182,206,.2),inset 0 -1px 0 0 rgba(255,255,255,.3)") 
+
+  $(function(){ 
+
+    $('.tree li:has(ul)').addClass('parent_li').find(' > span').attr('title', 'Collapse this branch'); 
+
+    $('.tree li.parent_li > span').on('click', function (e) { 
+
+        var children = $(this).parent('li.parent_li').find(' > ul > li'); 
+
+        if (children.is(":visible")) { 
+
+            children.hide('fast'); 
+
+            $(this).attr('title', 'Expand this branch').find(' > i').addClass('fa-folder').removeClass('fa-folder-open'); 
+
+        } else { 
+
+            children.show('fast'); 
+
+            $(this).attr('title', 'Collapse this branch').find(' > i').addClass('fa-folder-open').removeClass('fa-folder'); 
+
+        } 
+
+        e.stopPropagation(); 
+
+    });
+ })
+ $("#dashboards").after("<label title='拖动调整宽度' id='separator' style='float: left;width: 12px;height: 100%;position: absolute;cursor: e-resize;left: auto;background: white;z-index:100'/>")		 
+ jQuery(function ($){
+                var doc = $(document), dl = $("#dashboards"), dc = $("#dashboardview");
+				var sum = dl.width() + dc.width()
+                $("#separator").mousedown (function (e) {
+                    var me = $(this);
+                    var deltaX = e.clientX 
+                            - 
+                            (parseInt(me.css("left")) || parseInt(me.prop("clientLeft")));
+                    doc.mousemove(function (e){	
+                        var lt = e.clientX - deltaX; 
+						
+                        dc.css("left",lt+ "px");
+                        lt = lt > 360 ? 360 : lt;
+                        lt = lt < 200 ? 200 : lt;
+                        dl.width(lt);
+						me.css ("left", lt + 15 + "px");
+					    dc.width(sum - lt);
+						dc.css("left","0px");
+                    });
+                });
+ 
+                doc.mouseup (function(){
+                    doc.unbind("mousemove");
+                });
+                doc[0].ondragstart 
+                = doc[0].onselectstart 
+                = function () 
+                {
+                    return false;
+                };
+            });
+
+</script>
+
+
+<style> 
+         
+        .tree { 
+    min-height:20px; 
+    padding:19px;
+    padding-left:0px; 
+    margin-bottom:20px; 
+    background-color:#fbfbfb; 
+    border:1px solid #999; 
+    -webkit-border-radius:4px; 
+    -moz-border-radius:4px; 
+    border-radius:4px; 
+    -webkit-box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.05); 
+    -moz-box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.05); 
+    box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.05) 
+} 
+.tree li { 
+    list-style-type:none; 
+    margin:0; 
+    padding:10px 5px 0 5px; 
+    position:relative 
+} 
+.tree li::before, .tree li::after { 
+    content:''; 
+    left:-20px; 
+    position:absolute; 
+    right:auto 
+} 
+.tree li::before { 
+    border-left:1px solid #999; 
+    bottom:50px; 
+    height:100%; 
+    top:0; 
+    width:1px 
+} 
+.tree li::after { 
+    border-top:1px solid #999; 
+    height:20px; 
+    top:25px; 
+    width:25px 
+} 
+.tree li span { 
+    -moz-border-radius:5px; 
+    -webkit-border-radius:5px; 
+    border:1px solid #999; 
+    border-radius:5px; 
+    display:inline-block; 
+    padding:3px 8px; 
+    text-decoration:none 
+} 
+.tree li.parent_li>span { 
+    cursor:pointer 
+} 
+.tree>ul>li::before, .tree>ul>li::after { 
+    border:0 
+} 
+.tree li:last-child::before { 
+    height:30px 
+} 
+.tree li.parent_li>span:hover, .tree li.parent_li>span:hover+ul li span { 
+    background:#eee; 
+    border:1px solid #94a0b4; 
+    color:#000 
+}
+
+
+</style> 
+
+ 
+<div class="container-fluid">
+   {% block navbar %}
+      {% if not standalone_mode %}
+        <header class="top" role="header">
+          {% include 'appbuilder/navbar.html' %}
+        </header>
+      {% endif %}
+    {% endblock %}	
+  <div class="row-fluid">
+	<span>
+	 <div id="dashboards" class="col-xs-2" style="padding-right:0px;padding-left:0px;">
+       {% block messages %}
+       {% include 'superset/flash_wrapper.html' %}
+       {% endblock %}
+      <div class="tree well" style="border:none;background:inherit;padding-right:0px;padding-left:0px;" >
+
+  	<ul>	
+
+		<li>
+
+			<span><i class="fa fa-folder-open"></i>我的仪表盘</span> 
+
+			<ul>
+				
+				{% for item in dashs %}
+				<li>
+
+					<span><i class="fa fa-fw fa-dashboard"></i> <a target="dash_meta"  href="/superset/dashboard/{% if item.slug %}{{item.slug}}{% else %}{{item.id}}{% endif %}">{{item.dashboard_title}}</a></span>
+
+				</li>
+				{% endfor %}
+
+			</ul>
+
+		</li>
+
+
+ 	</ul>	
+
+	</div>
+	
+     </div>
+      <div id="dashboardview" class="col-xs-10" style="padding-right:0px">
+            <iframe id="dash_iframe" style="width:100%;height:100%;border:0;"  name="dash_meta" src="{% if  dashs  %}/superset/dashboard/{{dashs[0].id}}  {% endif %}">
+                
+            </iframe>
       </div>
-    </div>
-    <div class="panel-body">
-      <img class="loading" src="/static/assets/images/loading.gif"/>
-      <table id="dash_table" class="table" width="100%"></table>
-    </div>
+	</span>
   </div>
-</div>
+</divi>
+<script>  
+        $("#dash_iframe").on("load",function(){  
+                win_height = $(document).height();
+		win_width = $("#dashboardview").width();  
+                $(window.frames["dash_meta"].document.getElementsByTagName("header")[0]).remove();  
+                $("#dashboardview").css("height", win_height < 1000 ? 1000 : win_height)
+		$("#dash_iframe").css("width",win_width);  
+        })        
+          
+  
+</script> 
 {% endblock %}
+
 

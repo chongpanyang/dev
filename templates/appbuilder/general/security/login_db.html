@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html class="ng-scope"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide{display:none !important;}ng\:form{display:block;}.ng-animate-block-transitions{transition:0s all!important;-webkit-transition:0s all!important;}.ng-hide-add-active,.ng-hide-remove{display:block!important;}</style>
+	
+    <meta http-equiv="X-UA-Compatible" content="IE=8, IE=9, IE=10, IE=11, IE=12">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="http://www.easyrong.com/theme/red_theme/favicon.ico" type="image/x-icon">
+    <meta name="keywords" content="图表制作工具、表格制作工具">
+    <title>信隆行数据平台—立即登录</title>
+    <link type="text/css" rel="stylesheet" href="/static/assets/stylesheets/auto_combine.css">
+	<style>
+		.flexbox-box {
+			background: url(/static/assets/images/login_cloud_pic.png) no-repeat center 100px;
+		}
+		html, body{
+		    background: rgba(238,243,252,.96) url(/static/assets/images/login_bg.png) center bottom no-repeat fixed;
+		}
+	</style>
+	<!-- to replaced as render area-->	
+    {% block head_js %}
+        <script src="{{url_for('appbuilder.static',filename='js/jquery-latest.js')}}"></script>
+    {% endblock %}
+	<script>
+		 $(function(){
+			labels = $("label");
+			inputs = $("input");
+			inputs.each(function(i,n){
+				if(i > 1){
+					return;
+				}
+				$(n).on("focus",function(){
+						$(labels[i]).attr("class","focus-input")
+						console.log($(n).val())						
+						$(n).one("blur",function(){
+							if($(n).val() ==''){
+								$(labels[i]).attr("class","")
+							}
+						})						
+				})		
+			})
+		})
+		
+		function warn_info(msg){
+			$("#warn").html("");
+			$("#warn").append(
+				"<span ng-bind='view.hint' class='ng-binding'>" + msg + "</span>"
+			)
+		}
+		
+		function before_submit(){
+			if($("#username").val() == ""){
+				warn_info("请输入您的账户");
+				return false
+			}
+			
+			if($("#password").val() == ""){
+				warn_info("请输入您的密码");
+				return false
+			}
+			return true;
+		}
+		
+		function login(){
+			if(before_submit()){
+				$("form").submit();
+			}	
+		}
+	</script>
+	</head>
+<body style="">
+<div class="personal-header pr">
+	<a href="http://www.easyrong.com/"  target="view_window" class="pa logo">
+		<img src="/static/assets/images/xlh_logo.png">
+	</a>
+	<div class="pa btn-layer">
+		<a class="btn-animation btn-an-adverse" href="/register/form"><span>注册</span></a>
+	</div>
+</div>
+{% block content %}
+<div class="per-container">
+	<div class="flexbox-container" id="login_box">
+		<div class="flexbox-box ng-scope">
+			<div class="login-banner">
+				<img src="/static/assets/images/login_banner.png" align="bottom">
+			</div>
+			<div class="flexbox-box-bd">
+				<div class="tab-content clearfix" id="tab">
+					<ul>
+						<li class="active" style="text-align:left;font-size:16px;width:100%">登录</li>
+					</ul>
+				</div>
+				<form name="findPwdForm" class="ng-pristine ng-valid" action="" method="post">
+					<div class="form login">
+						<div class="mobile-layer" >
+							<div class="row">
+								<label>账号</label>
+								<div class="value">
+									<input type="text" id="username" name="username" autocomplete="off" class="input-account ng-pristine ng-valid">
+								</div>
+							</div>
+							<div class="row">
+								<label >密码</label>
+								<div class="value pr">
+									<input type="password" name="password" id="password" autocomplete="off" class="input-account code-input ng-pristine ng-valid">	
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="hint-layer" id="warn">
+					<!-- 通知区域 -->
+					{% with messages = get_flashed_messages(with_categories=true) %}
+    					{% if messages %}
+        					{% for category, m in messages %}
+         				   		{{ m }}
+       						{% endfor %}
+					{% endif %}
+					{% endwith %}		
+					</div>
+					<div class="submit-layer">
+						<a class="btn-animation btn-an-class btn-submit" href="javascript:login()"><span>登录</span></a>
+					</div>
+				{{form.hidden_tag()}} 
+				</form>
+			</div>
+			<div class="personal-footer ng-binding">
+				Copyright ©2015 一融网 版权所有 沪ICP备11015016号-2
+			</div>
+		</div>
+	</div>
+	<div id="browser_update" class="lg-box">
+		<div class="mask"></div>
+		<div class="main">
+			<h6>你的浏览器版本过低！</h6>
+			<p class="mt24">为了你有更好的使用体验，请先下载安装Chrome浏览器</p>
+			<a href="https://www.baidu.com/s?wd=chrome" target="_blank">立即下载</a>
+		</div>
+	</div>
+</div>
+{% endblock %}
+<script type="text/javascript">
+
+	//ie && ie8 以下的浏览器提示升级
+
+	var ua = navigator.userAgent,ie;
+	if(/MSIE/.test(ua)){
+		ie = /MSIE (.{3})/.exec(ua);
+		if(ie[1] <= 8.0){
+			document.getElementById('browser_update').style.display = 'block';
+			document.getElementById('login_box').style.display = 'none';
+		}
+	}
+</script>
